@@ -1,0 +1,19 @@
+{
+    //当使用flow语法或者实验性质的特性(eslint不支持但是babel支持的特性)需要使用babel-eslint,如不则使用默认即可
+    "parser": "esprima",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended"],
+    "rules": {
+        "no-console": "off"
+    }
+}
