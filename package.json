@@ -8,7 +8,6 @@
     "start": "pm2 start ./ecosystem.config.js",
     "restart": "pm2 restart ./ecosystem.config.js",
     "stop": "pm2 stop ./ecosystem.config.js"
-
   },
   "repository": {
     "type": "git",
@@ -26,14 +25,14 @@
   },
   "homepage": "https://github.com/Mr-jiangzhiguo/github-hook#readme",
   "devDependencies": {
-    "eslint": "^4.5.0"
+    "cross-env": "^5.2.0",
+    "eslint": "^5.14.1",
+    "nodemon": "^1.18.10"
   },
   "dependencies": {
-    "cross-env": "^5.0.5",
-    "debug": "^3.0.1",
-    "koa": "^2.3.0",
-    "koa-body": "^2.3.0",
-    "koa-router": "^7.2.1",
-    "nodemon": "^1.11.0"
+    "debug": "^4.1.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.0.8",
+    "koa-router": "^7.4.0"
   }
 }

@@ -1,5 +1,5 @@
 const Router = require('koa-router')
-// const debug = require('debug')('pyload')
+// const debug = require('debug')('payload')
 const router = new Router();
 const verify = require('../controlers/token').verify
 const jobs = require('../jobs')
