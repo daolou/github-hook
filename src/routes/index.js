@@ -3,6 +3,9 @@ const Router = require('koa-router')
 const router = new Router();
 const verify = require('../controlers/token').verify
 const jobs = require('../jobs')
+router.get('/',async(ctx)=>{
+    ctx.body = 'success';
+})
 router.post('/payload/:name',verify, async (ctx)=>{
     const {name} = ctx.params;
     const {ref} = ctx.request.body;
